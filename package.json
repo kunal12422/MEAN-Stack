@@ -1,0 +1,31 @@
+{
+  "name": "mean_stack",
+  "version": "1.0.0",
+  "description": "MEAN stack real time app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kunal12422/MEAN-Stack.git"
+  },
+  "keywords": [
+    "mean",
+    "mongo",
+    "express",
+    "angular",
+    "node"
+  ],
+  "author": "Kunal Sharma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kunal12422/MEAN-Stack/issues"
+  },
+  "homepage": "https://github.com/kunal12422/MEAN-Stack#readme",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "express": "^4.13.3",
+    "morgan": "^1.6.1"
+  }
+}
