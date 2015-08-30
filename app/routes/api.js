@@ -122,6 +122,21 @@ module.exports = function(app, express){
 				}
 				res.json({message:"New nith story created!"});
 			});
+		})
+		.get(function(req, res){
+
+			Story.find({creator: req.decoded.id}, function(err, stories){
+				if(err){
+					res.send(err);
+					return;
+				}
+				res.json(stories);
+			});
+		});
+
+		api.get('/me', function(req, res){
+			///required for the front end, since middleware can't be accessed from front-end; require seperate api....
+			res.json(req.decoded);
 		});
 
 	return api;
