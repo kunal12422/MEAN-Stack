@@ -1,3 +1,3 @@
 (function () {
-	angular.module('nithStory', []);
+	angular.module('nithStory', ['authService', 'MainCtrlModule']);
 })();
