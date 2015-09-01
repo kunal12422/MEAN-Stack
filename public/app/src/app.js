@@ -1,3 +1,3 @@
 (function () {
-	angular.module('nithStory', ['authService', 'MainCtrlModule']);
+	angular.module('nithStory', ['authService', 'MainCtrlModule', 'appRoutes']);
 })();
