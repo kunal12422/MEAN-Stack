@@ -67,7 +67,7 @@
 		};	
 	}])
 
-	.factory('interceptor', ['$q', '$location', 'AuthToken', function($q, $location, AuthToken){
+	.factory('AuthInterceptor', ['$q', '$location', 'AuthToken', function($q, $location, AuthToken){
 
 		var request = function(config){
 			var token = AuthToken.getToken();
@@ -75,8 +75,9 @@
 			if(token){
 				config.headers['x-access-token'] = token;
 			}
+			 
 
-			return token;
+			return config;
 		};
 
 		var responseError = function(response){
