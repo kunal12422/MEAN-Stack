@@ -10,7 +10,7 @@
 		};
 
 		vm.loggedIn = Auth.isLoggedIn();
-		console.log('heuuu ' + vm.loggedIn);
+		
 		$rootScope.$on('$routeChangeStart', function(){
 			vm.loggedIn = Auth.isLoggedIn();
 
@@ -31,7 +31,7 @@
 
 					Auth.getUser()
 						.then(function(data){
-							console.log('username = ' + data.data.username);
+						
 							vm.user = data.data;
 					});
 						if(data.success){
@@ -51,10 +51,7 @@
 		vm.doLogout = function(){
 			 vm.loggedIn =  Auth.isLoggedIn();
 			Auth.logout();
-			
-		
-				$location.path('/login');
-				
+			$location.path('/login');
 			
 		};
 
