@@ -15,6 +15,16 @@
 				.when('/signup', {
 					templateUrl : 'app/src/views/pages/signup.html',
 					controller: 'userCreateCtrl as vm'
+				})
+				.when('/all_stories', {
+					templateUrl: 'app/src/views/pages/allStories.html',
+					controller: 'AllStoriesCtrl as vm',
+					resolve: {
+						stories: function(storyService){
+							return storyService.allUsersStory();
+						}
+					}
+
 				});
 			
 		}]);
