@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/kunal12422/MEAN-Stack#readme",
   "dependencies": {
-    "bcrypt": "^0.8.5",
+    "bcrypt": "^5.0.0",
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.13.3",
     "express": "^4.13.3",
